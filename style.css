@@ -16,7 +16,6 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    
 }
 
 .navbar>li {
@@ -65,6 +64,8 @@ body {
 }
 
 .srodek {
+    display: flex;
+    flex-direction: column;
     background-color: #333333;
     flex-basis: 70%;
     color: white;
@@ -74,4 +75,11 @@ body {
 
 .link {
     color: beige;
+}
+
+.box {
+    align-self: center;
+    height: 40%;
+    width: 30%;
+    background-color: rgba(0, 0, 255, 0.172);
 }
