@@ -8,6 +8,24 @@ body {
     font-size: large;
 }
 
+@media only screen and (max-width: 620px) {
+    .lewo, .prawo {
+      display: none;
+    }
+    .main {
+        width: 100%;
+    }
+    .navbar>li>a:not(#hamburger) {
+        display:none;
+    }
+}
+
+@media only screen and (min-width: 621px) {
+    #hamburger {
+        display: none;
+    }
+}
+
 /*navbar*/
 .navbar {
     padding: 0;
@@ -52,6 +70,13 @@ body {
 
 }
 
+#hamburger {
+    top: -10%;
+    left: 0;
+    position: absolute;
+    scale: 70%;
+}
+
 /*main*/
 .main {
     height: 200%;
@@ -61,16 +86,6 @@ body {
     align-content: center;
     align-items: stretch;
 }
-
-@media only screen and (max-width: 620px) {
-    /* For mobile phones: */
-    .lewo, .prawo {
-      display: none;
-    }
-    .main {
-        width: 100%;
-    }
-  }
 
 #dupa {
     height: 5%;
