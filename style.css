@@ -15,7 +15,10 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
 }
 
 .navbar>li {
@@ -29,7 +32,7 @@ body {
     transition: 0.3s;
 }
 
-.navbar>li>a:hover{
+.navbar>li>a:hover:not(#toja){
     background-color: aliceblue;
     color: black;
 }
@@ -37,6 +40,13 @@ body {
 #active {
     background-color: aliceblue;
     color: black;
+}
+
+
+#toja {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 /*main*/
